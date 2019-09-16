@@ -1,0 +1,38 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>
+      Home
+    </ion-title>
+    <ion-avatar slot="end">
+      <img
+        src="https://i0.wp.com/www.winhelponline.com/blog/wp-content/uploads/2017/12/user.png?fit=256%2C256&quality=100&ssl=1">
+    </ion-avatar>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <br>
+  <ion-item>
+    <ion-datetime yearValues="2018,2019" displayFormat="DD/MMM/YYYY" placeholder="Selecione a Data"></ion-datetime>
+  </ion-item>
+  <br>
+  <br>
+  <ion-button expand="full" (click)="goToMeal()">Café da Manhã</ion-button>
+  <ion-button expand="full" (click)="goToMeal()">Lanche da Manhã</ion-button>
+  <ion-button expand="full" (click)="goToMeal()">Almoço</ion-button>
+  <ion-button expand="full" (click)="goToMeal()">Lanche da Tarde</ion-button>
+  <ion-button expand="full" (click)="goToMeal()">Jantar</ion-button>
+  <ion-button expand="full" (click)="goToMeal()">Lanche da Noite</ion-button>
+  <br>
+  <br>
+  <ion-list>
+    <ion-list-header>
+      <ion-label>Calorias Consumidas vs Calorias Sugeridas</ion-label>
+    </ion-list-header>
+    <ion-progress-bar value="0.7"></ion-progress-bar>
+  </ion-list>
+
+</ion-content>
